@@ -63,7 +63,7 @@
             this.pbWait.BackColor = System.Drawing.SystemColors.Control;
             this.pbWait.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.pbWait.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbWait.Image = global::CIDFares.Library.Controls.Properties.Resources.Loading;
+            this.pbWait.Image = global::CIDFares.Library.Controls.Properties.Resources.loading2;
             this.pbWait.Location = new System.Drawing.Point(0, 0);
             this.pbWait.Name = "pbWait";
             this.pbWait.Size = new System.Drawing.Size(249, 245);

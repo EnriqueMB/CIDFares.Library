@@ -145,6 +145,7 @@
             // 
             // ptBIcono
             // 
+            this.ptBIcono.Image = global::CIDFares.Library.Controls.Properties.Resources.check;
             this.ptBIcono.Location = new System.Drawing.Point(12, 6);
             this.ptBIcono.Name = "ptBIcono";
             this.ptBIcono.Size = new System.Drawing.Size(80, 80);

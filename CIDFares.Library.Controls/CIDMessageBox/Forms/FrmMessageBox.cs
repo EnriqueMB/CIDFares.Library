@@ -1,4 +1,5 @@
 ﻿using CIDFares.Library.Controls.CIDMessageBox.Enums;
+using CIDFares.Library.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,44 +50,44 @@ namespace CIDFares.Library.Controls.CIDMessageBox.Forms
             switch (typeMessage)
             {
                 case TypeMessage.correcto:
-                    ptBIcono.Image =  CIDFares.Library.Controls.Properties.Resources.AlertSuccess;
+                    ptBIcono.Image =  Properties.Resources.check;
                     this.Size = new Size(318, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
-                    sound.Stream = CIDFares.Library.Controls.Properties.Resources.AudioSuccess;
+                    sound.Stream = Properties.Resources.successuno;
                     sound.Play();
                     break;
                 case TypeMessage.error:
-                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.AlertError;
+                    ptBIcono.Image = Properties.Resources.eliminar;
                     this.Size = new Size(318, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
-                    sound.Stream = CIDFares.Library.Controls.Properties.Resources.AudioIncorrect;
+                    sound.Stream = Properties.Resources.incorrect;
                     sound.Play();
                     break;
                 case TypeMessage.informacion:
-                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.AlertExclamation;
+                    ptBIcono.Image = Properties.Resources.exclamaciontriangulo;
                     this.Size = new Size(318, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
-                    sound.Stream = CIDFares.Library.Controls.Properties.Resources.AudioExclamation;
+                    sound.Stream = Properties.Resources.Ding;
                     sound.Play();
                     break;
                 case TypeMessage.confirmacion:
-                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.AlertInformation;
+                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.informacion;
                     this.Size = new Size(412, 140);
                     this.btnSi.Visible = false;
                     this.BtnCancelar.Visible = true;
                     this.BtnConfirmar.Visible = true;
                     this.txtOpcion.Location = new Point(151, 29);
-                    sound.Stream = CIDFares.Library.Controls.Properties.Resources.AudioConfirmation;
+                    sound.Stream = CIDFares.Library.Controls.Properties.Resources.collect;
                     sound.Play();
                     break;
                 case TypeMessage.listaError:
-                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.AlertWarning;
+                    ptBIcono.Image = CIDFares.Library.Controls.Properties.Resources.exclamaciontriangulo;
                     this.Size = new Size(412, 200);
                     this.txtOpcion.Size = new Size(291, 95);
                     this.txtOpcion.ScrollBars = ScrollBars.Vertical;
