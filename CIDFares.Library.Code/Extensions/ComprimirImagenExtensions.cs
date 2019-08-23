@@ -131,6 +131,24 @@ namespace CIDFares.Library.Code.Extensions
             return base64String;
         }
 
+        public static string ToBase64String(this Image bmp, ImageFormat imageFormat)
+        {
+            string base64String = string.Empty;
+
+            MemoryStream memoryStream = new MemoryStream();
+            bmp.Save(memoryStream, imageFormat);
+
+            memoryStream.Position = 0;
+            byte[] byteBuffer = memoryStream.ToArray();
+
+            memoryStream.Close();
+
+            base64String = Convert.ToBase64String(byteBuffer);
+            byteBuffer = null;
+
+            return base64String;
+        }
+
         public static Image ImageBase64ToImage(this string imageBase64)
         {
             byte[] bytes = Convert.FromBase64String(imageBase64);
