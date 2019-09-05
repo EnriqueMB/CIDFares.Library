@@ -55,12 +55,6 @@
     <Compile Include="CIDDataGridsf\DataGridsf.Designer.cs">
       <DependentUpon>DataGridsf.cs</DependentUpon>
     </Compile>
-    <Compile Include="CIDDataGridsf\prueba.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CIDDataGridsf\prueba.Designer.cs">
-      <DependentUpon>prueba.cs</DependentUpon>
-    </Compile>
     <Compile Include="CIDMessageBox\Code\CIDMessageBox.cs" />
     <Compile Include="CIDMessageBox\Enums\TypeMessage.cs" />
     <Compile Include="CIDMessageBox\Forms\FrmMessageBox.cs">
@@ -98,9 +92,6 @@
     <Content Include="Resources\successuno.wav" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CIDDataGridsf\prueba.resx">
-      <DependentUpon>prueba.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CIDMessageBox\Forms\FrmMessageBox.resx">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
