@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Syncfusion.Core.WinForms, Version=17.1460.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.1460.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\DLL\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=17.1460.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CIDDataGridsf\DataGridsf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CIDDataGridsf\DataGridsf.Designer.cs">
+      <DependentUpon>DataGridsf.cs</DependentUpon>
+    </Compile>
     <Compile Include="CIDMessageBox\Code\CIDMessageBox.cs" />
     <Compile Include="CIDMessageBox\Enums\TypeMessage.cs" />
     <Compile Include="CIDMessageBox\Forms\FrmMessageBox.cs">
@@ -73,6 +85,7 @@
     <Content Include="Resources\eliminar.png" />
     <Content Include="Resources\exclamacion.png" />
     <Content Include="Resources\exclamaciontriangulo.png" />
+    <None Include="Resources\filtroblanco.png" />
     <Content Include="Resources\incorrect.wav" />
     <Content Include="Resources\informacion.png" />
     <Content Include="Resources\loading2.gif" />
