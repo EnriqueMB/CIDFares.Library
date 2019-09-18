@@ -63,7 +63,7 @@ namespace CIDFares.Library.Controls.CIDDataGridsf
 
             this.Style.GroupDropAreaItemStyle.BackColor = ColorTranslator.FromHtml("#E6E6E6");
             this.Style.GroupDropAreaItemStyle.TextColor = ColorTranslator.FromHtml("#000000");
-            this.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#234017");
+            this.Style.HeaderStyle.BackColor = ColorTranslator.FromHtml("#2EA630");
             this.Style.HeaderStyle.TextColor = ColorTranslator.FromHtml("#ffffff");
 
             this.Style.IndentCellStyle.BackColor = Color.FromArgb(250, 252, 251);
