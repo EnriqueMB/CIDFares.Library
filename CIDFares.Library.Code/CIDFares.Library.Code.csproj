@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Extensions\ComprimirImagenExtensions.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="Extensions\ConvertDataTableExtensions.cs" />
     <Compile Include="Helpers\ConnectionHelper.cs" />
     <Compile Include="Helpers\ErrorLogHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
