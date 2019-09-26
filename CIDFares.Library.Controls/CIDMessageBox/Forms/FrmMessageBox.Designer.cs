@@ -138,7 +138,7 @@
             this.txtOpcion.Multiline = true;
             this.txtOpcion.Name = "txtOpcion";
             this.txtOpcion.ReadOnly = true;
-            this.txtOpcion.Size = new System.Drawing.Size(266, 55);
+            this.txtOpcion.Size = new System.Drawing.Size(251, 55);
             this.txtOpcion.TabIndex = 13;
             this.txtOpcion.Text = "¿Estas seguro de cancelar esta operación?\r\n\r\n";
             this.txtOpcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
