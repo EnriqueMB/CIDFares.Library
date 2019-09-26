@@ -67,13 +67,12 @@
     <Compile Include="Helpers\ConnectionHelper.cs" />
     <Compile Include="Helpers\ErrorLogHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\IBase\IExcel.cs" />
+    <Compile Include="Utilities\Implements\Excel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utilities\IBase\" />
-    <Folder Include="Utilities\Implements\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
