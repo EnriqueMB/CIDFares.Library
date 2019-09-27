@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="CIDHorario\Enums\DaysHour.cs" />
     <Compile Include="CIDHorario\Enums\DaysNumber.cs" />
+    <Compile Include="CIDencuestas\FrmEncuesta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIDencuestas\FrmEncuesta.Designer.cs">
+      <DependentUpon>FrmEncuesta.cs</DependentUpon>
+    </Compile>
     <Compile Include="CIDMessageBox\Code\CIDMessageBox.cs" />
     <Compile Include="CIDMessageBox\Enums\TypeMessage.cs" />
     <Compile Include="CIDMessageBox\Forms\FrmMessageBox.cs">
@@ -88,6 +94,10 @@
   <ItemGroup>
     <Content Include="Resources\check.png" />
     <None Include="Resources\check1.png" />
+    <None Include="Resources\chevronderecha.png" />
+    <None Include="Resources\chevronizquierda.png" />
+    <None Include="Resources\chevronleft.png" />
+    <None Include="Resources\chevronright.png" />
     <Content Include="Resources\collect.wav" />
     <Content Include="Resources\Ding.wav" />
     <Content Include="Resources\eliminar.png" />
@@ -102,6 +112,9 @@
   <ItemGroup>
     <EmbeddedResource Include="CIDHorario\Design\HorarioDesign.resx">
       <DependentUpon>HorarioDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIDencuestas\FrmEncuesta.resx">
+      <DependentUpon>FrmEncuesta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CIDMessageBox\Forms\FrmMessageBox.resx">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>

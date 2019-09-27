@@ -134,11 +134,11 @@
             this.txtOpcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOpcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOpcion.ForeColor = System.Drawing.Color.White;
-            this.txtOpcion.Location = new System.Drawing.Point(98, 32);
+            this.txtOpcion.Location = new System.Drawing.Point(98, 21);
             this.txtOpcion.Multiline = true;
             this.txtOpcion.Name = "txtOpcion";
             this.txtOpcion.ReadOnly = true;
-            this.txtOpcion.Size = new System.Drawing.Size(216, 40);
+            this.txtOpcion.Size = new System.Drawing.Size(251, 55);
             this.txtOpcion.TabIndex = 13;
             this.txtOpcion.Text = "¿Estas seguro de cancelar esta operación?\r\n\r\n";
             this.txtOpcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
