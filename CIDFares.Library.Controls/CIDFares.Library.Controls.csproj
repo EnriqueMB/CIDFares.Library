@@ -55,6 +55,14 @@
     <Compile Include="CIDDataGridsf\DataGridsf.Designer.cs">
       <DependentUpon>DataGridsf.cs</DependentUpon>
     </Compile>
+    <Compile Include="CIDHorario\Design\HorarioDesign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIDHorario\Design\HorarioDesign.Designer.cs">
+      <DependentUpon>HorarioDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CIDHorario\Enums\DaysHour.cs" />
+    <Compile Include="CIDHorario\Enums\DaysNumber.cs" />
     <Compile Include="CIDMessageBox\Code\CIDMessageBox.cs" />
     <Compile Include="CIDMessageBox\Enums\TypeMessage.cs" />
     <Compile Include="CIDMessageBox\Forms\FrmMessageBox.cs">
@@ -92,6 +100,9 @@
     <Content Include="Resources\successuno.wav" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CIDHorario\Design\HorarioDesign.resx">
+      <DependentUpon>HorarioDesign.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CIDMessageBox\Forms\FrmMessageBox.resx">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +110,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CIDHorario\Code\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
