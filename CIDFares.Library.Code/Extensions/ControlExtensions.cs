@@ -33,6 +33,17 @@ namespace CIDFares.Library.Code.Extensions
                         .Select(x => x.ErrorMessage)));
                 }
             }
+
+            //foreach (var aux in validationResults.Errors)
+            //{
+            //    var controlProperty = container.GetType().GetField(aux.PropertyName + "Control", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+            //    if (controlProperty != null)
+            //    {
+            //        errorProvider.SetError((Control)controlProperty.GetValue(container),
+            //            string.Join(", ", validationResults.Errors.Where(x => x.PropertyName == aux.PropertyName)
+            //            .Select(x => x.ErrorMessage)));
+            //    }
+            //}
         }
 
         public static void CleanErrors(this Control container, ErrorProvider errorProvider, Type entityType)
