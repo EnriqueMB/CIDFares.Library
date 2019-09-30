@@ -61,6 +61,12 @@
     <Compile Include="CIDHorario\Design\HorarioDesign.Designer.cs">
       <DependentUpon>HorarioDesign.cs</DependentUpon>
     </Compile>
+    <Compile Include="CIDHorario\Design\HorarioDesignV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CIDHorario\Design\HorarioDesignV2.Designer.cs">
+      <DependentUpon>HorarioDesignV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="CIDHorario\Enums\DaysHour.cs" />
     <Compile Include="CIDHorario\Enums\DaysNumber.cs" />
     <Compile Include="CIDencuestas\FrmEncuesta.cs">
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="CIDWait\Forms\FrmWait.Designer.cs">
       <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPruebaControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPruebaControles.Designer.cs">
+      <DependentUpon>FrmPruebaControles.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -116,8 +128,14 @@
     <EmbeddedResource Include="CIDencuestas\FrmEncuesta.resx">
       <DependentUpon>FrmEncuesta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CIDHorario\Design\HorarioDesignV2.resx">
+      <DependentUpon>HorarioDesignV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CIDMessageBox\Forms\FrmMessageBox.resx">
       <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPruebaControles.resx">
+      <DependentUpon>FrmPruebaControles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

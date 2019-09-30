@@ -14,14 +14,15 @@ namespace CIDFares.Library.Controls.CIDHorario.Design
     public partial class HorarioDesign : UserControl
     {
         public DaysNumber Days { get; set; }
-        public HorarioDesign(DaysNumber days)
+        public HorarioDesign()
         {
             InitializeComponent();
-            Days = days;
+            
         }
 
-        public void Configurar()
+        public void Configurar(DaysNumber days)
         {
+            Days = days;
             try
             {
                 switch (Days)

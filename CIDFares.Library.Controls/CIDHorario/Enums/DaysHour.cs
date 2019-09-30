@@ -2,12 +2,13 @@
 {
     public enum DaysHour
     {
-        Lunes = 1,
-        Martes = 2,
-        Miercoles = 3,
-        Jueves = 4,
-        Viernes = 5,
-        Sabado = 6,
-        Domingo = 7
+        Default = 1,
+        Lunes = 2,
+        Martes = 3,
+        Miercoles = 4,
+        Jueves = 5,
+        Viernes = 6,
+        Sabado = 7,
+        Domingo = 8
     }
 }

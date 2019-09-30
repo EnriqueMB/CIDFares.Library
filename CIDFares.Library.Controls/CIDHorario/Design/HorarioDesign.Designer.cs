@@ -29,24 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.pnlHead = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlLunes = new System.Windows.Forms.Panel();
-            this.pnlMartes = new System.Windows.Forms.Panel();
-            this.pnlMiercoles = new System.Windows.Forms.Panel();
-            this.pnlJueves = new System.Windows.Forms.Panel();
-            this.pnlViernes = new System.Windows.Forms.Panel();
-            this.pnlSabado = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlDomingo = new System.Windows.Forms.Panel();
-            this.lblLunes = new System.Windows.Forms.Label();
-            this.lblMartes = new System.Windows.Forms.Label();
-            this.lblMiercoles = new System.Windows.Forms.Label();
-            this.lblJueves = new System.Windows.Forms.Label();
-            this.lblViernes = new System.Windows.Forms.Label();
-            this.lblSabado = new System.Windows.Forms.Label();
-            this.lblDomingo = new System.Windows.Forms.Label();
             this.txtLunes = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.txtMartes = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.txtMiercoles = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
@@ -54,7 +38,32 @@
             this.txtViernes = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.txtSabado = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.txtDomingo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.pnlHead = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlLunes = new System.Windows.Forms.Panel();
+            this.lblLunes = new System.Windows.Forms.Label();
+            this.pnlMartes = new System.Windows.Forms.Panel();
+            this.lblMartes = new System.Windows.Forms.Label();
+            this.pnlMiercoles = new System.Windows.Forms.Panel();
+            this.lblMiercoles = new System.Windows.Forms.Label();
+            this.pnlJueves = new System.Windows.Forms.Panel();
+            this.lblJueves = new System.Windows.Forms.Label();
+            this.pnlViernes = new System.Windows.Forms.Panel();
+            this.lblViernes = new System.Windows.Forms.Label();
+            this.pnlSabado = new System.Windows.Forms.Panel();
+            this.lblSabado = new System.Windows.Forms.Label();
+            this.pnlDomingo = new System.Windows.Forms.Panel();
+            this.lblDomingo = new System.Windows.Forms.Label();
             this.pnlContainer.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLunes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMartes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiercoles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJueves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtViernes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSabado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDomingo)).BeginInit();
             this.pnlHead.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnlLunes.SuspendLayout();
@@ -63,115 +72,25 @@
             this.pnlJueves.SuspendLayout();
             this.pnlViernes.SuspendLayout();
             this.pnlSabado.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.pnlDomingo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLunes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMartes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMiercoles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJueves)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtViernes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSabado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDomingo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainer.Controls.Add(this.panel8);
             this.pnlContainer.Controls.Add(this.pnlHead);
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(672, 372);
             this.pnlContainer.TabIndex = 0;
             // 
-            // pnlHead
-            // 
-            this.pnlHead.Controls.Add(this.flowLayoutPanel1);
-            this.pnlHead.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHead.Location = new System.Drawing.Point(0, 0);
-            this.pnlHead.Name = "pnlHead";
-            this.pnlHead.Size = new System.Drawing.Size(672, 79);
-            this.pnlHead.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.pnlLunes);
-            this.flowLayoutPanel1.Controls.Add(this.pnlMartes);
-            this.flowLayoutPanel1.Controls.Add(this.pnlMiercoles);
-            this.flowLayoutPanel1.Controls.Add(this.pnlJueves);
-            this.flowLayoutPanel1.Controls.Add(this.pnlViernes);
-            this.flowLayoutPanel1.Controls.Add(this.pnlSabado);
-            this.flowLayoutPanel1.Controls.Add(this.pnlDomingo);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(668, 73);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // pnlLunes
-            // 
-            this.pnlLunes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlLunes.Controls.Add(this.lblLunes);
-            this.pnlLunes.Location = new System.Drawing.Point(0, 0);
-            this.pnlLunes.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlLunes.Name = "pnlLunes";
-            this.pnlLunes.Size = new System.Drawing.Size(95, 70);
-            this.pnlLunes.TabIndex = 0;
-            // 
-            // pnlMartes
-            // 
-            this.pnlMartes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlMartes.Controls.Add(this.lblMartes);
-            this.pnlMartes.Location = new System.Drawing.Point(95, 0);
-            this.pnlMartes.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlMartes.Name = "pnlMartes";
-            this.pnlMartes.Size = new System.Drawing.Size(95, 70);
-            this.pnlMartes.TabIndex = 1;
-            // 
-            // pnlMiercoles
-            // 
-            this.pnlMiercoles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlMiercoles.Controls.Add(this.lblMiercoles);
-            this.pnlMiercoles.Location = new System.Drawing.Point(190, 0);
-            this.pnlMiercoles.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlMiercoles.Name = "pnlMiercoles";
-            this.pnlMiercoles.Size = new System.Drawing.Size(95, 70);
-            this.pnlMiercoles.TabIndex = 2;
-            // 
-            // pnlJueves
-            // 
-            this.pnlJueves.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlJueves.Controls.Add(this.lblJueves);
-            this.pnlJueves.Location = new System.Drawing.Point(285, 0);
-            this.pnlJueves.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlJueves.Name = "pnlJueves";
-            this.pnlJueves.Size = new System.Drawing.Size(95, 70);
-            this.pnlJueves.TabIndex = 3;
-            // 
-            // pnlViernes
-            // 
-            this.pnlViernes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlViernes.Controls.Add(this.lblViernes);
-            this.pnlViernes.Location = new System.Drawing.Point(380, 0);
-            this.pnlViernes.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlViernes.Name = "pnlViernes";
-            this.pnlViernes.Size = new System.Drawing.Size(95, 70);
-            this.pnlViernes.TabIndex = 4;
-            // 
-            // pnlSabado
-            // 
-            this.pnlSabado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlSabado.Controls.Add(this.lblSabado);
-            this.pnlSabado.Location = new System.Drawing.Point(475, 0);
-            this.pnlSabado.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlSabado.Name = "pnlSabado";
-            this.pnlSabado.Size = new System.Drawing.Size(95, 70);
-            this.pnlSabado.TabIndex = 5;
-            // 
             // panel8
             // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.flowLayoutPanel2);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(0, 79);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(672, 293);
@@ -194,88 +113,10 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(672, 293);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
-            // pnlDomingo
-            // 
-            this.pnlDomingo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlDomingo.Controls.Add(this.lblDomingo);
-            this.pnlDomingo.Location = new System.Drawing.Point(570, 0);
-            this.pnlDomingo.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlDomingo.Name = "pnlDomingo";
-            this.pnlDomingo.Size = new System.Drawing.Size(95, 70);
-            this.pnlDomingo.TabIndex = 6;
-            // 
-            // lblLunes
-            // 
-            this.lblLunes.AutoSize = true;
-            this.lblLunes.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLunes.Location = new System.Drawing.Point(16, 22);
-            this.lblLunes.Name = "lblLunes";
-            this.lblLunes.Size = new System.Drawing.Size(56, 20);
-            this.lblLunes.TabIndex = 0;
-            this.lblLunes.Text = "LUNES";
-            // 
-            // lblMartes
-            // 
-            this.lblMartes.AutoSize = true;
-            this.lblMartes.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMartes.Location = new System.Drawing.Point(12, 22);
-            this.lblMartes.Name = "lblMartes";
-            this.lblMartes.Size = new System.Drawing.Size(69, 20);
-            this.lblMartes.TabIndex = 1;
-            this.lblMartes.Text = "MARTES";
-            // 
-            // lblMiercoles
-            // 
-            this.lblMiercoles.AutoSize = true;
-            this.lblMiercoles.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMiercoles.Location = new System.Drawing.Point(2, 22);
-            this.lblMiercoles.Name = "lblMiercoles";
-            this.lblMiercoles.Size = new System.Drawing.Size(90, 20);
-            this.lblMiercoles.TabIndex = 1;
-            this.lblMiercoles.Text = "MIÉRCOLES";
-            // 
-            // lblJueves
-            // 
-            this.lblJueves.AutoSize = true;
-            this.lblJueves.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblJueves.Location = new System.Drawing.Point(15, 22);
-            this.lblJueves.Name = "lblJueves";
-            this.lblJueves.Size = new System.Drawing.Size(61, 20);
-            this.lblJueves.TabIndex = 1;
-            this.lblJueves.Text = "JUEVES";
-            // 
-            // lblViernes
-            // 
-            this.lblViernes.AutoSize = true;
-            this.lblViernes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblViernes.Location = new System.Drawing.Point(12, 22);
-            this.lblViernes.Name = "lblViernes";
-            this.lblViernes.Size = new System.Drawing.Size(70, 20);
-            this.lblViernes.TabIndex = 1;
-            this.lblViernes.Text = "VIERNES";
-            // 
-            // lblSabado
-            // 
-            this.lblSabado.AutoSize = true;
-            this.lblSabado.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblSabado.Location = new System.Drawing.Point(12, 22);
-            this.lblSabado.Name = "lblSabado";
-            this.lblSabado.Size = new System.Drawing.Size(71, 20);
-            this.lblSabado.TabIndex = 1;
-            this.lblSabado.Text = "SÁBADO";
-            // 
-            // lblDomingo
-            // 
-            this.lblDomingo.AutoSize = true;
-            this.lblDomingo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblDomingo.Location = new System.Drawing.Point(5, 22);
-            this.lblDomingo.Name = "lblDomingo";
-            this.lblDomingo.Size = new System.Drawing.Size(84, 20);
-            this.lblDomingo.TabIndex = 1;
-            this.lblDomingo.Text = "DOMINGO";
-            // 
             // txtLunes
             // 
+            this.txtLunes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLunes.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtLunes.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtLunes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -291,6 +132,8 @@
             // 
             // txtMartes
             // 
+            this.txtMartes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMartes.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtMartes.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtMartes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -305,6 +148,8 @@
             // 
             // txtMiercoles
             // 
+            this.txtMiercoles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMiercoles.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtMiercoles.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtMiercoles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -319,6 +164,8 @@
             // 
             // txtJueves
             // 
+            this.txtJueves.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtJueves.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtJueves.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtJueves.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -333,6 +180,8 @@
             // 
             // txtViernes
             // 
+            this.txtViernes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtViernes.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtViernes.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtViernes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -347,6 +196,8 @@
             // 
             // txtSabado
             // 
+            this.txtSabado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSabado.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtSabado.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtSabado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -361,6 +212,8 @@
             // 
             // txtDomingo
             // 
+            this.txtDomingo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDomingo.BeforeTouchSize = new System.Drawing.Size(95, 293);
             this.txtDomingo.BorderSides = System.Windows.Forms.Border3DSide.Right;
             this.txtDomingo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -373,6 +226,186 @@
             this.txtDomingo.Size = new System.Drawing.Size(95, 293);
             this.txtDomingo.TabIndex = 8;
             // 
+            // pnlHead
+            // 
+            this.pnlHead.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlHead.Controls.Add(this.flowLayoutPanel1);
+            this.pnlHead.Location = new System.Drawing.Point(0, 0);
+            this.pnlHead.Name = "pnlHead";
+            this.pnlHead.Size = new System.Drawing.Size(672, 79);
+            this.pnlHead.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Controls.Add(this.pnlLunes);
+            this.flowLayoutPanel1.Controls.Add(this.pnlMartes);
+            this.flowLayoutPanel1.Controls.Add(this.pnlMiercoles);
+            this.flowLayoutPanel1.Controls.Add(this.pnlJueves);
+            this.flowLayoutPanel1.Controls.Add(this.pnlViernes);
+            this.flowLayoutPanel1.Controls.Add(this.pnlSabado);
+            this.flowLayoutPanel1.Controls.Add(this.pnlDomingo);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(668, 73);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // pnlLunes
+            // 
+            this.pnlLunes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlLunes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLunes.Controls.Add(this.lblLunes);
+            this.pnlLunes.Location = new System.Drawing.Point(0, 0);
+            this.pnlLunes.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlLunes.Name = "pnlLunes";
+            this.pnlLunes.Size = new System.Drawing.Size(95, 70);
+            this.pnlLunes.TabIndex = 0;
+            // 
+            // lblLunes
+            // 
+            this.lblLunes.AutoSize = true;
+            this.lblLunes.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLunes.Location = new System.Drawing.Point(16, 22);
+            this.lblLunes.Name = "lblLunes";
+            this.lblLunes.Size = new System.Drawing.Size(56, 20);
+            this.lblLunes.TabIndex = 0;
+            this.lblLunes.Text = "LUNES";
+            // 
+            // pnlMartes
+            // 
+            this.pnlMartes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMartes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMartes.Controls.Add(this.lblMartes);
+            this.pnlMartes.Location = new System.Drawing.Point(95, 0);
+            this.pnlMartes.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMartes.Name = "pnlMartes";
+            this.pnlMartes.Size = new System.Drawing.Size(95, 70);
+            this.pnlMartes.TabIndex = 1;
+            // 
+            // lblMartes
+            // 
+            this.lblMartes.AutoSize = true;
+            this.lblMartes.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMartes.Location = new System.Drawing.Point(12, 22);
+            this.lblMartes.Name = "lblMartes";
+            this.lblMartes.Size = new System.Drawing.Size(69, 20);
+            this.lblMartes.TabIndex = 1;
+            this.lblMartes.Text = "MARTES";
+            // 
+            // pnlMiercoles
+            // 
+            this.pnlMiercoles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMiercoles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMiercoles.Controls.Add(this.lblMiercoles);
+            this.pnlMiercoles.Location = new System.Drawing.Point(190, 0);
+            this.pnlMiercoles.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMiercoles.Name = "pnlMiercoles";
+            this.pnlMiercoles.Size = new System.Drawing.Size(95, 70);
+            this.pnlMiercoles.TabIndex = 2;
+            // 
+            // lblMiercoles
+            // 
+            this.lblMiercoles.AutoSize = true;
+            this.lblMiercoles.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMiercoles.Location = new System.Drawing.Point(2, 22);
+            this.lblMiercoles.Name = "lblMiercoles";
+            this.lblMiercoles.Size = new System.Drawing.Size(90, 20);
+            this.lblMiercoles.TabIndex = 1;
+            this.lblMiercoles.Text = "MIÉRCOLES";
+            // 
+            // pnlJueves
+            // 
+            this.pnlJueves.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlJueves.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlJueves.Controls.Add(this.lblJueves);
+            this.pnlJueves.Location = new System.Drawing.Point(285, 0);
+            this.pnlJueves.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlJueves.Name = "pnlJueves";
+            this.pnlJueves.Size = new System.Drawing.Size(95, 70);
+            this.pnlJueves.TabIndex = 3;
+            // 
+            // lblJueves
+            // 
+            this.lblJueves.AutoSize = true;
+            this.lblJueves.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblJueves.Location = new System.Drawing.Point(15, 22);
+            this.lblJueves.Name = "lblJueves";
+            this.lblJueves.Size = new System.Drawing.Size(61, 20);
+            this.lblJueves.TabIndex = 1;
+            this.lblJueves.Text = "JUEVES";
+            // 
+            // pnlViernes
+            // 
+            this.pnlViernes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlViernes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlViernes.Controls.Add(this.lblViernes);
+            this.pnlViernes.Location = new System.Drawing.Point(380, 0);
+            this.pnlViernes.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlViernes.Name = "pnlViernes";
+            this.pnlViernes.Size = new System.Drawing.Size(95, 70);
+            this.pnlViernes.TabIndex = 4;
+            // 
+            // lblViernes
+            // 
+            this.lblViernes.AutoSize = true;
+            this.lblViernes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblViernes.Location = new System.Drawing.Point(12, 22);
+            this.lblViernes.Name = "lblViernes";
+            this.lblViernes.Size = new System.Drawing.Size(70, 20);
+            this.lblViernes.TabIndex = 1;
+            this.lblViernes.Text = "VIERNES";
+            // 
+            // pnlSabado
+            // 
+            this.pnlSabado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlSabado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSabado.Controls.Add(this.lblSabado);
+            this.pnlSabado.Location = new System.Drawing.Point(475, 0);
+            this.pnlSabado.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlSabado.Name = "pnlSabado";
+            this.pnlSabado.Size = new System.Drawing.Size(95, 70);
+            this.pnlSabado.TabIndex = 5;
+            // 
+            // lblSabado
+            // 
+            this.lblSabado.AutoSize = true;
+            this.lblSabado.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblSabado.Location = new System.Drawing.Point(12, 22);
+            this.lblSabado.Name = "lblSabado";
+            this.lblSabado.Size = new System.Drawing.Size(71, 20);
+            this.lblSabado.TabIndex = 1;
+            this.lblSabado.Text = "SÁBADO";
+            // 
+            // pnlDomingo
+            // 
+            this.pnlDomingo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlDomingo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlDomingo.Controls.Add(this.lblDomingo);
+            this.pnlDomingo.Location = new System.Drawing.Point(570, 0);
+            this.pnlDomingo.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlDomingo.Name = "pnlDomingo";
+            this.pnlDomingo.Size = new System.Drawing.Size(95, 70);
+            this.pnlDomingo.TabIndex = 6;
+            // 
+            // lblDomingo
+            // 
+            this.lblDomingo.AutoSize = true;
+            this.lblDomingo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblDomingo.Location = new System.Drawing.Point(5, 22);
+            this.lblDomingo.Name = "lblDomingo";
+            this.lblDomingo.Size = new System.Drawing.Size(84, 20);
+            this.lblDomingo.TabIndex = 1;
+            this.lblDomingo.Text = "DOMINGO";
+            // 
             // HorarioDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,6 +414,16 @@
             this.Name = "HorarioDesign";
             this.Size = new System.Drawing.Size(672, 372);
             this.pnlContainer.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLunes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMartes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMiercoles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJueves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtViernes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSabado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDomingo)).EndInit();
             this.pnlHead.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pnlLunes.ResumeLayout(false);
@@ -395,18 +438,8 @@
             this.pnlViernes.PerformLayout();
             this.pnlSabado.ResumeLayout(false);
             this.pnlSabado.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.pnlDomingo.ResumeLayout(false);
             this.pnlDomingo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLunes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMartes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMiercoles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJueves)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtViernes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSabado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDomingo)).EndInit();
             this.ResumeLayout(false);
 
         }
