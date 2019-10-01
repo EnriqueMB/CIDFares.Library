@@ -137,7 +137,6 @@
             this.txtDomingo.Name = "txtDomingo";
             this.txtDomingo.Size = new System.Drawing.Size(96, 328);
             this.txtDomingo.TabIndex = 4;
-            this.txtDomingo.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlHoraSabado
             // 
@@ -162,7 +161,6 @@
             this.txtSabado.Name = "txtSabado";
             this.txtSabado.Size = new System.Drawing.Size(94, 328);
             this.txtSabado.TabIndex = 4;
-            this.txtSabado.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlHoraViernes
             // 
@@ -187,7 +185,6 @@
             this.txtViernes.Name = "txtViernes";
             this.txtViernes.Size = new System.Drawing.Size(94, 328);
             this.txtViernes.TabIndex = 4;
-            this.txtViernes.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlHoraJueves
             // 
@@ -212,7 +209,6 @@
             this.txtJueves.Name = "txtJueves";
             this.txtJueves.Size = new System.Drawing.Size(94, 328);
             this.txtJueves.TabIndex = 4;
-            this.txtJueves.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlHoraMiercoles
             // 
@@ -237,7 +233,6 @@
             this.txtMiercoles.Name = "txtMiercoles";
             this.txtMiercoles.Size = new System.Drawing.Size(94, 328);
             this.txtMiercoles.TabIndex = 4;
-            this.txtMiercoles.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlHoraMartes
             // 
@@ -262,7 +257,6 @@
             this.txtMartes.Name = "txtMartes";
             this.txtMartes.Size = new System.Drawing.Size(94, 328);
             this.txtMartes.TabIndex = 4;
-            this.txtMartes.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // pnlDomingo
             // 
@@ -446,7 +440,6 @@
             this.txtLunes.Name = "txtLunes";
             this.txtLunes.Size = new System.Drawing.Size(94, 328);
             this.txtLunes.TabIndex = 3;
-            this.txtLunes.Text = "12:00 a 12:00\r\n\r\n12:00 a 12:00";
             // 
             // HorarioDesignV2
             // 
