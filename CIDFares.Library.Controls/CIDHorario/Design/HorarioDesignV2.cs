@@ -165,5 +165,35 @@ namespace CIDFares.Library.Controls.CIDHorario.Design
                     break;
             }
         }
+
+        public void EliminarHora(DaysHour daysHour)
+        {
+            switch (daysHour)
+            {
+                case DaysHour.Lunes:
+                    txtLunes.Text = string.Empty;
+                    break;
+                case DaysHour.Martes:
+                    txtMartes.Text = string.Empty;
+                    break;
+                case DaysHour.Miercoles:
+                    txtMiercoles.Text = string.Empty;
+                    break;
+                case DaysHour.Jueves:
+                    txtJueves.Text = string.Empty;
+                    break;
+                case DaysHour.Viernes:
+                    txtViernes.Text = string.Empty;
+                    break;
+                case DaysHour.Sabado:
+                    txtSabado.Text = string.Empty;
+                    break;
+                case DaysHour.Domingo:
+                    txtDomingo.Text = string.Empty;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
