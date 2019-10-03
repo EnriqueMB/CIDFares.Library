@@ -13,6 +13,7 @@ namespace CIDFares.Library.Code.Utilities.IBase
 
         string lineasGuiom();
         string lineasIgual();
+        string lineasAsteriscos();
         void EncabezadoVenta();
         void TextoIzquierda(string texto);
         void TextDerecha(string texto);
