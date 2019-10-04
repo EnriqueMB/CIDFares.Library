@@ -13,7 +13,6 @@ namespace CIDFares.Library.Code.Utilities.IBase
         void GuardarArchivo();
         void EscribirCelda(int columna, int fila, string valor);
         void Cerrar();
-
-
+        string AbrirExcel();
     }
 }

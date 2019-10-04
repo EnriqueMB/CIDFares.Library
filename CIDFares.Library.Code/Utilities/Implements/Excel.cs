@@ -12,6 +12,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
 {
     public class Excel : IExcel
     {
+        string Path;
         Microsoft.Office.Interop.Excel.Application xlsApp = new Microsoft.Office.Interop.Excel.Application();
         Workbook Libro;
         Sheets Hojas;//conjunto de hojas
@@ -56,19 +57,25 @@ namespace CIDFares.Library.Code.Utilities.Implements
         {
             try
             {
+                
                 Libro.Close();
+                xlsApp.Application.Quit();
                 xlsApp.Quit();
                 releaseObject(Hoja);
                 releaseObject(Libro);
                 releaseObject(Hojas);
                 releaseObject(xlsApp);
+
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Cierra los procesos del excel 
+        /// </summary>
+        /// <param name="obj"></param>
         private void releaseObject(object obj)//Recolector de basura para no espera 
         {
             try
@@ -85,9 +92,13 @@ namespace CIDFares.Library.Code.Utilities.Implements
             finally
             {
                 GC.Collect();
+                //GC.WaitForPendingFinalizers();
+                //GC.Collect();
             }
         }
-
+        /// <summary>
+        /// Guarda el archivo con el nombre que se escriba
+        /// </summary>
         public void GuardarArchivo()
         {
             SaveFileDialog saveFileDialogExcel = new SaveFileDialog();
@@ -101,5 +112,27 @@ namespace CIDFares.Library.Code.Utilities.Implements
             }
 
         }
+
+       public string AbrirExcel()
+       {
+            try
+            {
+                OpenFileDialog openFileDialogExcel = new OpenFileDialog();
+                openFileDialogExcel.Filter = "Excel Files|*.xlsx";
+                openFileDialogExcel.FileName = "";
+                openFileDialogExcel.Title = "SELECCIONE EL ARCHIVO EXCEL";
+                openFileDialogExcel.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString();
+                if(openFileDialogExcel.ShowDialog() == DialogResult.OK)
+                {
+                    Path = openFileDialogExcel.FileName;
+                }
+                return Path;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+       }
     }
 }
