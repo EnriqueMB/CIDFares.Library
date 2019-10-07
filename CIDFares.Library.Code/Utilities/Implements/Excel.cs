@@ -57,7 +57,6 @@ namespace CIDFares.Library.Code.Utilities.Implements
         {
             try
             {
-                
                 Libro.Close();
                 xlsApp.Application.Quit();
                 xlsApp.Quit();
@@ -112,7 +111,10 @@ namespace CIDFares.Library.Code.Utilities.Implements
             }
 
         }
-
+        /// <summary>
+        /// Abre el archivo excel y devuelve a ruta
+        /// </summary>
+        /// <returns></returns>
        public string AbrirExcel()
        {
             try
