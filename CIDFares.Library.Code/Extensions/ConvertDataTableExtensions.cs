@@ -10,7 +10,7 @@ namespace CIDFares.Library.Code.Extensions
 {
     public static class ConvertDataTableExtensions
     {
-        public static DataTable ToDataTable<T>(this List<T> iList)
+        public static DataTable ToDataTable<T>(this List<T> iList, List<string> columns = null)
         {
             DataTable dataTable = new DataTable();
             PropertyDescriptorCollection propertyDescriptorCollection =
@@ -23,15 +23,20 @@ namespace CIDFares.Library.Code.Extensions
                 if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
                     type = Nullable.GetUnderlyingType(type);
 
-
-                dataTable.Columns.Add(propertyDescriptor.Name, type);
+                if (columns == null || columns.Where(x => x.Contains(propertyDescriptor.Name)).Any())
+                    dataTable.Columns.Add(propertyDescriptor.Name, type);
             }
-            object[] values = new object[propertyDescriptorCollection.Count];
+            object[] values = new object[dataTable.Columns.Count];
             foreach (T iListItem in iList)
             {
-                for (int i = 0; i < values.Length; i++)
+                int y = 0;
+                for (int i = 0; i < propertyDescriptorCollection.Count; i++)
                 {
-                    values[i] = propertyDescriptorCollection[i].GetValue(iListItem);
+                    if (columns == null || columns.Where(x => x.Contains(propertyDescriptorCollection[i].Name)).Any())
+                    {
+                        values[y] = propertyDescriptorCollection[i].GetValue(iListItem);
+                        y++;
+                    }
                 }
                 dataTable.Rows.Add(values);
             }
