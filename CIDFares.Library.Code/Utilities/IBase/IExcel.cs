@@ -14,5 +14,6 @@ namespace CIDFares.Library.Code.Utilities.IBase
         void EscribirCelda(int columna, int fila, string valor);
         void Cerrar();
         string AbrirExcel();
+        string LeerExcel(int FilaInicio, int ColumnaInicio);
     }
 }

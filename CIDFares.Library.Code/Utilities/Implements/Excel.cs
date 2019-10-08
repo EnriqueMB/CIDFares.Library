@@ -13,6 +13,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
     public class Excel : IExcel
     {
         string Path;
+        string X;
         Microsoft.Office.Interop.Excel.Application xlsApp = new Microsoft.Office.Interop.Excel.Application();
         Workbook Libro;
         Sheets Hojas;//conjunto de hojas
@@ -136,5 +137,18 @@ namespace CIDFares.Library.Code.Utilities.Implements
                 throw ex;
             }
        }
+
+        public string LeerExcel(int FilaInicio, int ColumnaInicio)
+        {
+            try
+            {               
+                X = (Hoja.Cells[FilaInicio, ColumnaInicio] as Microsoft.Office.Interop.Excel.Range).Value2.ToString();
+                return X;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
