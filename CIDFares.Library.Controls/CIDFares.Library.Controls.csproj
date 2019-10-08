@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Btn\Btn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Btn\Btn.Designer.cs">
+      <DependentUpon>Btn.cs</DependentUpon>
+    </Compile>
     <Compile Include="CIDDataGridsf\DataGridsf.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     <Content Include="Resources\successuno.wav" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Btn\Btn.resx">
+      <DependentUpon>Btn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CIDHorario\Design\HorarioDesign.resx">
       <DependentUpon>HorarioDesign.cs</DependentUpon>
     </EmbeddedResource>

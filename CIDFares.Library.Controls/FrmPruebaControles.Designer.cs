@@ -46,7 +46,7 @@
             // 
             this.horarioDesignV21.Location = new System.Drawing.Point(39, 35);
             this.horarioDesignV21.Name = "horarioDesignV21";
-            this.horarioDesignV21.Size = new System.Drawing.Size(702, 372);
+            this.horarioDesignV21.Size = new System.Drawing.Size(702, 340);
             this.horarioDesignV21.TabIndex = 0;
             // 
             // FrmPruebaControles
