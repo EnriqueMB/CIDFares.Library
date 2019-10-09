@@ -13,7 +13,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
     public class Excel : IExcel
     {
         string Path;
-        string X;
+        string ValorCelda;
         Microsoft.Office.Interop.Excel.Application xlsApp = new Microsoft.Office.Interop.Excel.Application();
         Workbook Libro;
         Sheets Hojas;//conjunto de hojas
@@ -92,8 +92,6 @@ namespace CIDFares.Library.Code.Utilities.Implements
             finally
             {
                 GC.Collect();
-                //GC.WaitForPendingFinalizers();
-                //GC.Collect();
             }
         }
         /// <summary>
@@ -113,7 +111,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
 
         }
         /// <summary>
-        /// Abre el archivo excel y devuelve a ruta
+        /// Abre el archivo excel y devuelve la ruta
         /// </summary>
         /// <returns></returns>
        public string AbrirExcel()
@@ -137,13 +135,18 @@ namespace CIDFares.Library.Code.Utilities.Implements
                 throw ex;
             }
        }
-
+        /// <summary>
+        /// devuelve el valor de la celda del excel en la fila y columna especificado
+        /// </summary>
+        /// <param name="FilaInicio"></param>
+        /// <param name="ColumnaInicio"></param>
+        /// <returns></returns>
         public string LeerExcel(int FilaInicio, int ColumnaInicio)
         {
             try
             {               
-                X = (Hoja.Cells[FilaInicio, ColumnaInicio] as Microsoft.Office.Interop.Excel.Range).Value2.ToString();
-                return X;
+                ValorCelda = (Hoja.Cells[FilaInicio, ColumnaInicio] as Microsoft.Office.Interop.Excel.Range).Value2.ToString();
+                return ValorCelda;
             }
             catch (Exception ex)
             {
