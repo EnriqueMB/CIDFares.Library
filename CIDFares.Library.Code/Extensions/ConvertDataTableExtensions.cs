@@ -23,7 +23,7 @@ namespace CIDFares.Library.Code.Extensions
                 if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
                     type = Nullable.GetUnderlyingType(type);
 
-                if (columns == null || columns.Where(x => x.Contains(propertyDescriptor.Name)).Any())
+                if (columns == null || columns.Where(x => x.Equals(propertyDescriptor.Name)).Any())
                     dataTable.Columns.Add(propertyDescriptor.Name, type);
             }
             object[] values = new object[dataTable.Columns.Count];
@@ -32,7 +32,7 @@ namespace CIDFares.Library.Code.Extensions
                 int y = 0;
                 for (int i = 0; i < propertyDescriptorCollection.Count; i++)
                 {
-                    if (columns == null || columns.Where(x => x.Contains(propertyDescriptorCollection[i].Name)).Any())
+                    if (columns == null || columns.Where(x => x.Equals(propertyDescriptorCollection[i].Name)).Any())
                     {
                         values[y] = propertyDescriptorCollection[i].GetValue(iListItem);
                         y++;
