@@ -51,7 +51,7 @@ namespace CIDFares.Library.Controls.CIDMessageBox.Forms
             {
                 case TypeMessage.correcto:
                     ptBIcono.Image =  Properties.Resources.check;
-                    this.Size = new Size(318, 140);
+                    this.Size = new Size(412, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
@@ -60,7 +60,7 @@ namespace CIDFares.Library.Controls.CIDMessageBox.Forms
                     break;
                 case TypeMessage.error:
                     ptBIcono.Image = Properties.Resources.eliminar;
-                    this.Size = new Size(318, 140);
+                    this.Size = new Size(412, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
@@ -69,7 +69,7 @@ namespace CIDFares.Library.Controls.CIDMessageBox.Forms
                     break;
                 case TypeMessage.informacion:
                     ptBIcono.Image = Properties.Resources.exclamaciontriangulo;
-                    this.Size = new Size(318, 140);
+                    this.Size = new Size(412, 140);
                     this.btnSi.Visible = true;
                     this.BtnCancelar.Visible = false;
                     this.BtnConfirmar.Visible = false;
