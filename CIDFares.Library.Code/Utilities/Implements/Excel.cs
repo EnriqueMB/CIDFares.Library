@@ -24,7 +24,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
         /// </summary>
         /// <param name="Ruta"></param>
         /// <param name="Nombre"></param>
-        public void AbrirArchivo(string Ruta, string Nombre)
+        public bool AbrirArchivo(string Ruta, string Nombre)
         {
             try
             {
@@ -33,12 +33,14 @@ namespace CIDFares.Library.Code.Utilities.Implements
                 Libro = xlsApp.Workbooks.Open(Ruta);//se abre e libro en la ruta recibida
                 Hojas = Libro.Sheets;
                 Hoja = (Worksheet)Hojas[Nombre]; //se agrega el nombre que recibe a la hoja
+                return true;
             }
             catch (Exception ex)
-            {
-
+            {               
+                return false; 
                 throw ex;
             }
+            
         }
         /// <summary>
         /// Recibe columna y fila inicial con el valor que tendra en esa posicion para llenar el excel
@@ -102,7 +104,7 @@ namespace CIDFares.Library.Code.Utilities.Implements
             SaveFileDialog saveFileDialogExcel = new SaveFileDialog();
             saveFileDialogExcel.Filter = "Excel Files|*.xlsx";
             saveFileDialogExcel.FileName = "";
-            saveFileDialogExcel.Title = "Seleccione donde guardar el excel";
+            saveFileDialogExcel.Title = "SELECCIONE DONDE GUARDAR EL EXCEL";
             saveFileDialogExcel.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments).ToString();
             if (saveFileDialogExcel.ShowDialog() == DialogResult.OK)
             {

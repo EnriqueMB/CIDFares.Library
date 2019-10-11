@@ -9,7 +9,7 @@ namespace CIDFares.Library.Code.Utilities.IBase
 {
     public interface IExcel
     {
-        void AbrirArchivo(string Ruta, string Nombre);
+        bool AbrirArchivo(string Ruta, string Nombre);
         void GuardarArchivo();
         void EscribirCelda(int columna, int fila, string valor);
         void Cerrar();
