@@ -56,8 +56,15 @@ namespace CIDFares.Library.Code.Extensions
                 if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
                     type = Nullable.GetUnderlyingType(type);
 
+
+                //bool typeIsNullable = type.IsGenericType && type.GetGenericTypeDefinition().Equals(typeof(Nullable));
+
+                var aux = TypeDescriptor.GetProperties(type);
+
                 if (columns == null || columns.Where(x => x.Equals(propertyDescriptor.Name)).Any())
-                    if (propertyDescriptor.PropertyType.GetFields().Any())
+
+                    if(type.GetFields().Any())
+                    //if (propertyDescriptor.PropertyType.GetFields().Any())
                         dataTable.Columns.Add(propertyDescriptor.Name, type);
                     else
                     {
@@ -83,7 +90,12 @@ namespace CIDFares.Library.Code.Extensions
                 {
                     if (columns == null || columns.Where(x => x.Equals(propertyDescriptorCollection[i].Name)).Any())
                     {
-                        if (propertyDescriptorCollection[i].PropertyType.GetFields().Any())
+                        Type type = propertyDescriptorCollection[i].PropertyType;
+
+                        if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+                            type = Nullable.GetUnderlyingType(type);
+
+                        if (type.GetFields().Any())
                         {
                             values[y] = propertyDescriptorCollection[i].GetValue(iListItem);
                             y++;
